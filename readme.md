@@ -49,3 +49,32 @@ El modulo de electron expone caracteristicas por medio de namespaces, unos ejemp
 
 ### Fin de principios de electron
 [Tutorial](https://www.electronjs.org/docs/tutorial/first-app)
+
+## Trabajando con electron.
+
+Electron no tiene una estructura basica que seguir, o una forma "correcta" con la cual trabajar.
+Electron esta hecho para que cada desarrollador eliga la estructura que mas le apetezca para trabajar, es ideal para proyectos pequeños o proyectos grandes.
+
+### Boilerplate vs CLI
+
+Los boileplates no son mas que un punto de partida, podemos utilizar esto para darle un inicio a nuestro proyecto, pero estos son altamente personalizables.
+Por otro lado los CLI (linea de comandos) son mucho mas practicos y nos seran de mucha ayuda a lo largo de nuestro proyecto, pero estos impondran muchas reglas a la hora de hablar de estructurar nuestro proyecto.
+
+#### Herramientas mas utilizadas para electron.
+- [electron-forge](https://www.electronforge.io/)
+- [electron-builder](https://www.electron.build/)
+- [electron-react-boilerplate](https://electron-react-boilerplate.js.org/docs/installation/)
+- [otros](https://github.com/sindresorhus/awesome-electron#boilerplates)
+
+## Electron Application Architecture
+
+### Main and render processes
+En electron el proceso 	que ejecuta el "main script" es el *proceso principal*, este es el proceso que depliega la GUI para crear la pagina web, una aplicacion de electron solo puede tener un proceso principal, pero nunca mas.
+
+
+Ya que que electron utiliza Chromium para desplegar sus paginas web, este tambien utiliza la arquitectura multiproceso de Chromium en la que cada pagina web de electron se ejecuta en su propio proceso, este proceso es el *proceso de renderisacion*
+
+Normalmente las paginas web se ejecutan en un ambiente aislado (sandboxes) y estas no permiten la obtencion de recursos nativos, pero electron provee la oportunidad de utilizar node.js APIs en las paginas lo cual nos da la posibilidad de hacer operaciones de bajo nivel en el sistema operativo.
+
+[info](https://www.electronjs.org/docs/tutorial/application-architecture#main-and-renderer-processes)
+
