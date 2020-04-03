@@ -1,4 +1,7 @@
 # GDG UNAM taller de electron
+
+Este taller se base de la [documentacion de electron](https://www.electronjs.org/docs)
+
 ## Requisitos:
 	- NPM
 	- NODE
@@ -43,3 +46,6 @@ Las aplicaciones de electron son desarrolladas con JS con los mismos principios 
 El modulo de electron expone caracteristicas por medio de namespaces, unos ejemplos de esto es el ciclo de vida de una aplicacion es manejado a traves de `electron.app` y las ventanas de nuestras apps son creadas utilizando `electron.BrowserWindow`
 
 `main.js` sera el encargado de crear ventanas y de manejar todos los eventos del sistema.
+
+### Fin de principios de electron
+[Tutorial](https://www.electronjs.org/docs/tutorial/first-app)
