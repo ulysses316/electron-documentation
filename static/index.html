@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <link rel="stylesheet" href="../node_modules/uikit/dist/css/uikit.min.css">
+    <link rel="stylesheet" href="./style/master.css">
+    <title>Hello world!</title>
+</head>
+  <body>
+    <div class="uk-position-relative">
+      <img class="uk-width-1-1 uk-height-small" src="./img/descarga.jpeg" alt="">
+      <div class="uk-position-top">
+          <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+              <div class="uk-navbar-left">
+                  <ul class="uk-navbar-nav">
+                      <li class="uk-active"><a href="#">Active</a></li>
+                      <li><a href="#">Item</a></li>
+                      <li>
+                          <a href="#">Parent</a>
+                          <div class="uk-navbar-dropdown">
+                              <ul class="uk-nav uk-navbar-dropdown-nav">
+                                  <li class="uk-active"><a href="#">Active</a></li>
+                                  <li><a href="#">Item</a></li>
+                                  <li class="uk-nav-header">Header</li>
+                                  <li><a href="#">Item</a></li>
+                                  <li><a href="#">Item</a></li>
+                                  <li class="uk-nav-divider"></li>
+                                  <li><a href="#">Item</a></li>
+                              </ul>
+                          </div>
+                      </li>
+                  </ul>
+              </div>
+          </nav>
+      </div>
+  </div>
+
+  <div class="uk-card uk-card-default uk-card-body uk-flex uk-flex-center">
+    <ul class="uk-iconnav">
+      <li><a href="#" uk-icon="icon: plus" uk-tooltip="title: Añadir; delay: 500"></a></li>
+      <li><a href="#" uk-icon="icon: trash" uk-tooltip="title: Borrar; delay: 500"></a></li>
+      </div>
+    </ul>
+  </div>
+
+  <section class="uk-container uk-margin">
+    <div class="conteiner-grid">
+      <article class="uk-card uk-card-default uk-card-body">
+        <h1 class="uk-article-title">Noches de GDG UNAM, ElectronJS</h1>
+        <hr>
+        <p class="uk-article-meta">Written by <a class="uk-button-text" href="#">ulysses316</a> on 25 April 2020. Posted in GDG UNAM</p>
+        <p class="uk-text-lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sint delectus perspiciatis pariatur explicabo aliquid nemo nostrum deleniti, autem nulla mollitia ullam illo! Temporibus commodi laboriosam nihil repellendus, consequatur sequi.</p>
+        <div class="uk-grid-small uk-child-width-auto" uk-grid>
+          <div>
+              <a class="uk-button uk-button-text" href="#">Read more</a>
+          </div>
+          <div>
+              <a class="uk-button uk-button-text" href="#">5 Comments</a>
+          </div>
+      </div>
+    </article>
+  
+  
+    <article class="uk-card uk-card-secondary uk-card-body">
+      <h1 class="uk-article-title">Noches de GDG UNAM, ElectronJS</h1>
+      <hr>
+      <p class="uk-article-meta">Written by <a class="uk-button-text" href="#">ulysses316</a> on 25 April 2020. Posted in GDG UNAM</p>
+      <p class="uk-text-lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sint delectus perspiciatis pariatur explicabo aliquid nemo nostrum deleniti, autem nulla mollitia ullam illo! Temporibus commodi laboriosam nihil repellendus, consequatur sequi.</p>
+      <div class="uk-grid-small uk-child-width-auto" uk-grid>
+        <div>
+            <a class="uk-button uk-button-text" href="#">Read more</a>
+        </div>
+        <div>
+            <a class="uk-button uk-button-text" href="#">5 Comments</a>
+        </div>
+    </div>
+  </article>
+  
+  <article class=" uk-card uk-card-primary uk-card-body">
+    <h1 class="uk-article-title">Noches de GDG UNAM, ElectronJS</h1>
+    <hr>
+    <p class="uk-article-meta">Written by <a class="uk-button-text" href="#">ulysses316</a> on 25 April 2020. Posted in GDG UNAM</p>
+    <p class="uk-text-lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sint delectus perspiciatis pariatur explicabo aliquid nemo nostrum deleniti, autem nulla mollitia ullam illo! Temporibus commodi laboriosam nihil repellendus, consequatur sequi.</p>
+    <div class="uk-grid-small uk-child-width-auto" uk-grid>
+      <div>
+          <a class="uk-button uk-button-text" href="#">Read more</a>
+      </div>
+      <div>
+          <a class="uk-button uk-button-text" href="#">5 Comments</a>
+      </div>
+  </div>
+  </article>
+  <div class="uk-card uk-card-default">
+    <div class="uk-card-media-top">
+      <img class="uk-width-1-1" src="img/space.png" alt="">
+    </div>
+    <div class="uk-card-body">
+      <h3 class="uk-card-title">Media Top</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+    </div>
+  </div>
+  <div class="uk-card uk-card-default">
+    <div class="uk-card-media-top">
+      <img class="uk-width-1-1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS2v7EIaNpEy1ZgyIfRx8pS9Tl00OLOdjKlnKVEtLHGbEat__Or&usqp=CAU" alt="">
+    </div>
+    <div class="uk-card-body">
+      <h3 class="uk-card-title">Media Top</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+    </div>
+  </div>
+  <div class="uk-card uk-card-default">
+    <div class="uk-card-media-top">
+      <img class="uk-width-1-1" src="img/space.png" alt="">
+    </div>
+    <div class="uk-card-body">
+      <h3 class="uk-card-title">Media Top</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+    </div>
+  </div>
+    </div>
+  </section>
+
+  <hr class="uk-divider-icon">
+
+  <section class="uk-container">
+    <pre><code>// Code example
+      &lt;div id="myid" class="myclass" hidden&gt;
+          Lorem ipsum &lt;strong&gt;dolor&lt;/strong&gt; sit amet, consectetur adipiscing elit.
+      &lt;/div&gt;
+    </code></pre>
+  </section>
+
+  <hr class="uk-divider-icon">
+
+  <section class="uk-container uk-margin">
+    <div class="uk-column-1-2 uk-column-divider">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+  
+      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+  </div>
+  </section>
+
+  <hr class="uk-divider-icon">
+
+  <section class="uk-container uk-text-center">
+    <h1 class="uk-h3">Cumpleaños de Ulises!</h1>
+    <div class="uk-flex uk-flex-center">
+      <div class="uk-grid-small uk-child-width-auto uk-margin" uk-grid uk-countdown="date: 2020-05-23T22:08:00+00:00">
+        <div>
+          <div class="uk-countdown-number uk-countdown-days"></div>
+        </div>
+        <div>
+          <div class="uk-countdown-number uk-countdown-hours"></div>
+        </div>
+        <div>
+          <div class="uk-countdown-number uk-countdown-minutes"></div>
+        </div>
+        <div>
+          <div class="uk-countdown-number uk-countdown-seconds"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="uk-divider-icon">
+
+  <section>
+    <div class="uk-light uk-background-secondary uk-padding">
+      <h3>Dark</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <button class="uk-button uk-button-default">Button</button>
+  </div>
+  </section>
+
+    <script src="../node_modules/uikit/dist/js/uikit.min.js"></script>
+    <script src="../node_modules/uikit/dist/js/uikit-icons.min.js"></script>
+
+  </body>
+</html>

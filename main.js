@@ -16,7 +16,7 @@ function createWindow(){
         }
     })
     // Abrir el archivo index.HTML
-    win.loadFile('index.html');
+    win.loadFile('static/index.html');
 
     // Habilitamos las herramientas de desarrollador
     // automaticamente cuando inicie la aplicacion
