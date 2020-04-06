@@ -6,6 +6,7 @@
     <!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
     <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
     <link rel="stylesheet" href="../node_modules/uikit/dist/css/uikit.min.css">
+    <link rel="stylesheet" href="../node_modules/quill/dist/quill.snow.css">
     <link rel="stylesheet" href="./style/master.css">
     <title>Hello world!</title>
 </head>
@@ -16,34 +17,36 @@
           <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
               <div class="uk-navbar-left">
                   <ul class="uk-navbar-nav">
-                      <li class="uk-active"><a href="#">Active</a></li>
-                      <li><a href="#">Item</a></li>
-                      <li>
-                          <a href="#">Parent</a>
-                          <div class="uk-navbar-dropdown">
-                              <ul class="uk-nav uk-navbar-dropdown-nav">
-                                  <li class="uk-active"><a href="#">Active</a></li>
-                                  <li><a href="#">Item</a></li>
-                                  <li class="uk-nav-header">Header</li>
-                                  <li><a href="#">Item</a></li>
-                                  <li><a href="#">Item</a></li>
-                                  <li class="uk-nav-divider"></li>
-                                  <li><a href="#">Item</a></li>
-                              </ul>
-                          </div>
-                      </li>
+                      <li class="uk-active"><a href="#">Notas</a></li>
+                      <li><a href="#">Papelera</a></li>
                   </ul>
               </div>
           </nav>
       </div>
   </div>
 
-  <div class="uk-card uk-card-default uk-card-body uk-flex uk-flex-center">
-    <ul class="uk-iconnav">
-      <li><a href="#" uk-icon="icon: plus" uk-tooltip="title: Añadir; delay: 500"></a></li>
-      <li><a href="#" uk-icon="icon: trash" uk-tooltip="title: Borrar; delay: 500"></a></li>
-      </div>
-    </ul>
+   <div class="uk-flex uk-flex-center" > <!-- Icon-menu -->
+    <div class="uk-card uk-card-default uk-card-body uk-flex uk-flex-center uk-width-4-5 uk-margin-top">
+      <ul class="uk-iconnav">
+        <!-- This is an anchor toggling the modal -->
+        <li><a href="#modal-example" uk-icon="icon: plus" uk-tooltip="title: Añadir; delay: 500" uk-toggle></a></li>
+        <!-- This is the modal -->
+        <div id="modal-example" uk-modal>
+          <div class="uk-modal-dialog uk-modal-body">
+            <div id="editor">
+  
+            </div>
+            <p class="uk-text-right">
+              <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+              <button class="uk-button uk-button-primary" type="button">Save</button>
+            </p>
+          </div>
+        </div>
+  
+        <li><a href="#" uk-icon="icon: trash" uk-tooltip="title: Borrar; delay: 500"></a></li>
+        </div>
+      </ul>
+    </div>  
   </div>
 
   <section class="uk-container uk-margin">
@@ -171,14 +174,15 @@
 
   <section>
     <div class="uk-light uk-background-secondary uk-padding">
-      <h3>Dark</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <button class="uk-button uk-button-default">Button</button>
+      <h3>Noches de GDG UNAM</h3>
+      <p>Este codigo fue hecho para el taller de electron impartido en <a href="http://facebook.com/GDGUNAM" target="_blank" rel="noopener noreferrer">GDG UNAM</a> impartido por <a href="https://github.com/ulysses316/electron-documentation" target="_blank" rel="noopener noreferrer">ulysses316</a></p>
+      <button class="uk-button uk-button-default"><a href="http://" target="_blank" rel="noopener noreferrer">ir al en vivo</a></button>
   </div>
   </section>
-
     <script src="../node_modules/uikit/dist/js/uikit.min.js"></script>
     <script src="../node_modules/uikit/dist/js/uikit-icons.min.js"></script>
-
+    <script src="../node_modules/quill/dist/quill.min.js"></script>
+    <!-- Initialize Quill editor -->
+    <script src="./scripts/script.js"></script>
   </body>
 </html>
