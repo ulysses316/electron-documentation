@@ -33,12 +33,10 @@
         <!-- This is the modal -->
         <div id="modal-example" uk-modal>
           <div class="uk-modal-dialog uk-modal-body">
-            <div id="editor">
-  
-            </div>
+            <textarea name="myfield" id="editor" class="notaInput" style="width:100%" rows="10"></textarea>
             <p class="uk-text-right">
               <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
-              <button class="uk-button uk-button-primary" type="button">Save</button>
+              <button class="uk-button uk-button-primary" id="btn-agregar" onclick="agregarNota()" type="button">Save</button>
             </p>
           </div>
         </div>
@@ -51,22 +49,7 @@
 
   <section class="uk-container uk-margin">
     <div class="conteiner-grid">
-      <article class="uk-card uk-card-default uk-card-body">
-        <h1 class="uk-article-title">Noches de GDG UNAM, ElectronJS</h1>
-        <hr>
-        <p class="uk-article-meta">Written by <a class="uk-button-text" href="#">ulysses316</a> on 25 April 2020. Posted in GDG UNAM</p>
-        <p class="uk-text-lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sint delectus perspiciatis pariatur explicabo aliquid nemo nostrum deleniti, autem nulla mollitia ullam illo! Temporibus commodi laboriosam nihil repellendus, consequatur sequi.</p>
-        <div class="uk-grid-small uk-child-width-auto" uk-grid>
-          <div>
-              <a class="uk-button uk-button-text" href="#">Read more</a>
-          </div>
-          <div>
-              <a class="uk-button uk-button-text" href="#">5 Comments</a>
-          </div>
-      </div>
-    </article>
-  
-  
+    <ul id="lista"></ul>
     <article class="uk-card uk-card-secondary uk-card-body">
       <h1 class="uk-article-title">Noches de GDG UNAM, ElectronJS</h1>
       <hr>
@@ -82,20 +65,6 @@
     </div>
   </article>
   
-  <article class=" uk-card uk-card-primary uk-card-body">
-    <h1 class="uk-article-title">Noches de GDG UNAM, ElectronJS</h1>
-    <hr>
-    <p class="uk-article-meta">Written by <a class="uk-button-text" href="#">ulysses316</a> on 25 April 2020. Posted in GDG UNAM</p>
-    <p class="uk-text-lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sint delectus perspiciatis pariatur explicabo aliquid nemo nostrum deleniti, autem nulla mollitia ullam illo! Temporibus commodi laboriosam nihil repellendus, consequatur sequi.</p>
-    <div class="uk-grid-small uk-child-width-auto" uk-grid>
-      <div>
-          <a class="uk-button uk-button-text" href="#">Read more</a>
-      </div>
-      <div>
-          <a class="uk-button uk-button-text" href="#">5 Comments</a>
-      </div>
-  </div>
-  </article>
   <div class="uk-card uk-card-default">
     <div class="uk-card-media-top">
       <img class="uk-width-1-1" src="img/space.png" alt="">
@@ -105,69 +74,7 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
     </div>
   </div>
-  <div class="uk-card uk-card-default">
-    <div class="uk-card-media-top">
-      <img class="uk-width-1-1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS2v7EIaNpEy1ZgyIfRx8pS9Tl00OLOdjKlnKVEtLHGbEat__Or&usqp=CAU" alt="">
-    </div>
-    <div class="uk-card-body">
-      <h3 class="uk-card-title">Media Top</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-    </div>
-  </div>
-  <div class="uk-card uk-card-default">
-    <div class="uk-card-media-top">
-      <img class="uk-width-1-1" src="img/space.png" alt="">
-    </div>
-    <div class="uk-card-body">
-      <h3 class="uk-card-title">Media Top</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-    </div>
-  </div>
-    </div>
-  </section>
-
-  <hr class="uk-divider-icon">
-
-  <section class="uk-container">
-    <pre><code>// Code example
-      &lt;div id="myid" class="myclass" hidden&gt;
-          Lorem ipsum &lt;strong&gt;dolor&lt;/strong&gt; sit amet, consectetur adipiscing elit.
-      &lt;/div&gt;
-    </code></pre>
-  </section>
-
-  <hr class="uk-divider-icon">
-
-  <section class="uk-container uk-margin">
-    <div class="uk-column-1-2 uk-column-divider">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
   
-      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
-  </div>
-  </section>
-
-  <hr class="uk-divider-icon">
-
-  <section class="uk-container uk-text-center">
-    <h1 class="uk-h3">Cumpleaños de Ulises!</h1>
-    <div class="uk-flex uk-flex-center">
-      <div class="uk-grid-small uk-child-width-auto uk-margin" uk-grid uk-countdown="date: 2020-05-23T22:08:00+00:00">
-        <div>
-          <div class="uk-countdown-number uk-countdown-days"></div>
-        </div>
-        <div>
-          <div class="uk-countdown-number uk-countdown-hours"></div>
-        </div>
-        <div>
-          <div class="uk-countdown-number uk-countdown-minutes"></div>
-        </div>
-        <div>
-          <div class="uk-countdown-number uk-countdown-seconds"></div>
-        </div>
-      </div>
-    </div>
   </section>
 
   <hr class="uk-divider-icon">
@@ -175,14 +82,17 @@
   <section>
     <div class="uk-light uk-background-secondary uk-padding">
       <h3>Noches de GDG UNAM</h3>
-      <p>Este codigo fue hecho para el taller de electron impartido en <a href="http://facebook.com/GDGUNAM" target="_blank" rel="noopener noreferrer">GDG UNAM</a> impartido por <a href="https://github.com/ulysses316/electron-documentation" target="_blank" rel="noopener noreferrer">ulysses316</a></p>
+      <p>Este codigo fue hecho para el taller de electron de <a href="http://facebook.com/GDGUNAM" target="_blank" rel="noopener noreferrer">GDG UNAM</a> impartido por <a href="https://github.com/ulysses316/electron-documentation" target="_blank" rel="noopener noreferrer">ulysses316</a></p>
       <button class="uk-button uk-button-default"><a href="http://" target="_blank" rel="noopener noreferrer">ir al en vivo</a></button>
   </div>
+
   </section>
     <script src="../node_modules/uikit/dist/js/uikit.min.js"></script>
     <script src="../node_modules/uikit/dist/js/uikit-icons.min.js"></script>
     <script src="../node_modules/quill/dist/quill.min.js"></script>
     <!-- Initialize Quill editor -->
-    <script src="./scripts/script.js"></script>
+    <script src="./scripts/quill-conf.js"></script>
+    <script src="./scripts/notes.js"></script>
   </body>
 </html>
+

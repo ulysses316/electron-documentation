@@ -2,9 +2,7 @@ var toolbarOptions = [
     ['bold', 'italic', 'underline', 'strike'],        // toggled buttons
     ['blockquote', 'code-block'],
   
-    [{ 'header': 1 }, { 'header': 2 }],               // custom button values
     [{ 'list': 'ordered'}, { 'list': 'bullet' }],
-    [{ 'script': 'sub'}, { 'script': 'super' }],      // superscript/subscript
     [{ 'indent': '-1'}, { 'indent': '+1' }],          // outdent/indent
   
   
@@ -19,3 +17,4 @@ var toolbarOptions = [
     },
     theme: 'snow'
   });
+  
